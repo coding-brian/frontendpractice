@@ -1,0 +1,256 @@
+@import './base.css';
+
+body {
+  background-color: var(--very-dark-grey);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bold;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 31px;
+}
+
+img {
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.title {
+  color: var(--grey);
+}
+
+.generator {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.password-container {
+  background-color: var(--dark-grey);
+  padding: 19px 32px 19px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  max-height: 80px;
+}
+
+.password {
+  color: var(--almost-white);
+  margin-right: 16px;
+}
+
+.password-copy {
+  opacity: 20%;
+}
+
+.condition-container {
+  padding: 24px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: var(--dark-grey);
+}
+
+.character-length-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.character-length {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.character-length .title {
+  color: var(--almost-white);
+}
+
+.character-length .number {
+  color: var(--neon-green);
+}
+
+.condition {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.strength-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--very-dark-grey);
+  padding: 20px 32px 20px 32px;
+}
+
+.strength-figure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.strength-figure-title {
+  margin-right: 16px;
+  color: var(--almost-white);
+}
+
+.figure {
+  display: flex;
+  gap: 8px;
+}
+
+.rectangle {
+  width: 10px;
+  height: 28px;
+  border: 2px var(--almost-white) solid;
+}
+
+.rectangle.too-week {
+  background-color: var(--red);
+  border: none;
+}
+
+.rectangle.week {
+  background-color: var(--orange);
+  border: none;
+}
+
+.rectangle.medium {
+  background-color: var(--yellow);
+  border: none;
+}
+
+.rectangle.strong {
+  background-color: var(--neon-green);
+  border: none;
+}
+
+.button {
+  border: 0px;
+  background-color: var(--neon-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--dark-grey);
+  border: 2px var(--neon-green) solid;
+}
+
+.button:hover .text {
+  color: var(--neon-green);
+}
+
+.button:hover .arrow-right {
+  background-image: url('./icon-arrow-right-green.svg');
+}
+
+.button .text {
+  color: var(--dark-grey);
+  margin-right: 24px;
+}
+
+.arrow-right {
+  background-image: url('./icon-arrow-right.svg');
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.copy-container {
+  display: flex;
+  align-items: center;
+}
+
+.copy-text {
+  margin-right: 16px;
+  color: var(--neon-green);
+}
+
+.copy-img {
+  background-image: url('./icon-copy.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 21px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.copy-img:hover {
+  background-image: url('./icon-copy-white.svg');
+}
+
+/* 桌機（769px 以上） */
+@media (min-width: 769px) {
+  /* 桌機樣式 */
+  .generator {
+    width: 540px;
+  }
+}
+
+/* 平板（481px ~ 768px） */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/* 手機（小於 480px） */
+@media (max-width: 480px) {
+  /* 手機樣式 */
+  main {
+    gap: 16px;
+  }
+
+  .generator {
+    gap: 16px;
+  }
+
+  .password-container {
+    padding: 16px;
+  }
+
+  .copy-img {
+    width: 17.5px;
+    height: 20px;
+  }
+
+  .condition-container {
+    padding: 16px;
+  }
+
+  .character-length-container {
+    gap: 8px;
+  }
+
+  .font-size-m {
+    font-size: 16px;
+  }
+
+  .strength-container {
+    padding: 18px 16px 18px 16px;
+  }
+
+  .button {
+    height: 56px;
+    margin-top: -16px;
+  }
+}

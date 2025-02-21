@@ -1,0 +1,89 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --dark-grey: #24232c;
+  --grey: #817d92;
+  --almost-white: #e6e5ea;
+  --very-dark-grey: #18171f;
+  --neon-green: #a4ffaf;
+  --red: #f64a4a;
+  --orange: #fb7c58;
+  --yellow: #f8cd65;
+}
+
+* {
+  font-family: 'JetBrains Mono', monospace;
+  box-sizing: border-box;
+}
+
+.almost-white {
+  color: var(--almost-white);
+}
+
+.heading-l {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 43px;
+  color: var(--almost-white);
+}
+
+.heading-m {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 31px;
+  color: var(--almost-white);
+}
+
+.body {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bold;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  max-height: 8px;
+  width: 100%;
+  outline: none;
+  background-color: var(--very-dark-grey);
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width: 28px;
+  background: var(--almost-white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  -webkit-appearance: none;
+  box-shadow: 0 0 0 2px var(--neon-green);
+  background: var(--very-dark-grey);
+}
+
+/* 隱藏預設樣式 */
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0 24px 0 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--almost-white);
+  outline: none;
+  cursor: pointer;
+}
+
+/* 勾選時的背景顏色 */
+input[type='checkbox']:checked {
+  border: 2px solid var(--neon-green);
+  background-color: var(--neon-green); /* 勾選後背景色 */
+  background-image: url('./icon-check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+label {
+  cursor: pointer;
+}
