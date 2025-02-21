@@ -1,0 +1,113 @@
+:root{
+    --yellow: #F4D04E;
+    --gray-950:#111111;
+    --gray-500:#6B6B6B;
+    --spacing-200:24px;
+    --spacing-150:12px;
+    --spacing-100:8px;
+    --spacing-50:4px;
+}
+p{
+    margin: 0;
+}
+
+body {
+    background-color: var(--yellow);
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+}
+
+main{
+    background-color: white;
+    max-width: 336px;
+    padding: var(--spacing-200) var(--spacing-200);
+    border: #111111 solid 1px ;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px 0px black;
+    stroke: blue;
+    display: grid;
+    row-gap: var(--spacing-200);
+}
+
+.blog-img{
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+article{
+    display: grid;
+    row-gap: var(--spacing-150);
+}
+
+.title{
+    cursor: pointer;
+}
+
+.title:hover{
+    color: var(--yellow);
+}
+
+.category{
+    background-color: var(--yellow);
+    padding:  var(--spacing-50) var(--spacing-150);
+    border-radius: 4px;
+    justify-self: start;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:var(--spacing-150);
+}
+
+.author-img{
+    height: 32px;
+    width: 32px;
+}
+
+
+.text-preset-1{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.text-preset-2{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.text-preset-3{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.text-preset-3-blod{
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.yellow{
+    color: var(--yellow);
+}
+
+.gray-500{
+    color: var(--gray-500);
+}
+
+.gray-950{
+    color: var(--gray-950);
+}
