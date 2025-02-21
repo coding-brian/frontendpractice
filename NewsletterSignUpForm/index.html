@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+
+    <main>
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="image" class="banner" >
+      <div class="content">
+        <div class="description">
+          <span class="dark-navy heading-text">Stay updated!</span>
+          <span class="body-text dark-navy"
+            >Join 60,000+ product managers receiving monthly updates on:</span
+          >
+          <ul class="dark-navy body-text">
+            <li>
+              <div>
+                <img src="./assets/images/icon-list.svg" alt="" />
+                <span>Product discovery and building what matters</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="./assets/images/icon-list.svg" alt="" />
+                <span>Measuring to ensure updates are a success</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="./assets/images/icon-list.svg" alt="" />
+                <span>And much more!</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="subscription">
+          <div class="email-field">
+            <div class="email-field-text">
+              <span class="dark-navy body-small-text">Email address</span>
+              <span class="error-message body-small-text vermellion"></span>
+            </div>
+            <input
+              type="text"
+              name=""
+              id="email"
+              placeholder="email@company.com"
+              class="email-input"
+            />
+          </div>
+          <button type="button" class="button" id="subscription-button">
+            <span class="body-bold-text">Subscribe to monthly newsletter</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div class="message">
+      <div class="message-content">
+        <img
+          src="./assets/images/icon-success.svg"
+          alt="check"
+          class="message-check"
+        />
+        <div class="message-description">
+          <span class="dark-navy heading-text"> Thanks for subscribing! </span>
+          <span class="body-text dark-navy">
+            A confirmation email has been sent to
+            <span class="body-bold-text dark-navy" id="message-email"
+              >ash@loremcompany.com</span
+            >. Please open it and click the button inside to confirm your
+            subscription.
+          </span>
+        </div>
+      </div>
+      <button type="button" class="button" id="dismiss-button">
+        <span class="body-bold-text">Dismiss message</span>
+      </button>
+    </div>
+
+    <!-- Success message end -->
+  </body>
+</html>
