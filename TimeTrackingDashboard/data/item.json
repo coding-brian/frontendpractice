@@ -1,0 +1,45 @@
+[
+    {
+        "id":0,
+        "type":0,
+        "name":"Work",
+        "background_img":"./images/icon-work.svg",
+        "background_color_class":"work"
+        
+    },
+    {
+        "id":1,
+        "type":1,
+        "name":"Play",
+        "background_img":"./images/icon-play.svg",
+        "background_color_class":"paly"
+    },
+    {
+        "id":2,
+        "type":2,
+        "name":"Study",
+        "background_img":"./images/icon-study.svg",
+        "background_color_class":"study"
+    },
+    {
+        "id":3,
+        "type":3,
+        "name":"Exercise",
+        "background_img":"./images/icon-exercise.svg",
+        "background_color_class":"exercise"
+    },
+    {
+        "id":4,
+        "type":4,
+        "name":"Social",
+        "background_img":"./images/icon-social.svg",
+        "background_color_class":"social"
+    },
+    {
+        "id":5,
+        "type":5,
+        "name":"Self Care",
+        "background_img":"./images/icon-self-care.svg",
+        "background_color_class":"self-care"
+    }
+]

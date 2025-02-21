@@ -1,0 +1,8 @@
+{
+    "work":0,
+    "play":1,
+    "study":2,
+    "exercise":3,
+    "social":4,
+    "selfCare":5
+}
