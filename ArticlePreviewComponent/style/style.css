@@ -1,0 +1,266 @@
+:root{
+    --desaturated-dark-blue:#6E8098;
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+h1,h2{
+    margin: 0;
+}
+
+button{
+    border-width: 0px;
+}
+
+.very-dark-grayish-blue{
+    color: hsl(217, 19%, 35%);
+}
+
+.desaturated-dark-blue{
+    color: var(--desaturated-dark-blue);
+}
+
+.grayish-blue{
+    color: hsl(212, 23%, 69%)
+}
+
+.light-grayish-blue{
+    color: hsl(210, 46%, 95%)
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Manrope", sans-serif;
+    background-color: #ECF2F8;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow:rgba(201, 213, 225, 0.5) 0px 40px 40px -10px ;
+}
+
+.banner{
+    object-fit: cover;
+    max-width: 258px;
+    height: 280px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container{
+    display: flex;
+    padding:32px 40px 32px 40px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 365px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 20px;
+    color: #48556a;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+}
+
+.description{
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    color: #6E8098;
+}
+
+.author{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.avator{
+    display: flex;
+    column-gap: 16px;
+}
+
+.avator-img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+.share-container{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    background-color: #ECF2F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.share-container.active{
+    background-color: #6E8098;
+}
+
+.share-container a{
+    display: flex;
+}
+
+.share-img{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    background-color: #ECF2F8;
+    border-radius: 100%;
+}
+
+.name{
+    font-weight: bold;
+    color: #48556a;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    display: block;
+}
+
+time{
+    font-weight: 500;
+    color: #9DAEC2;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+}
+
+.share-link-container{
+    max-width: 248px;
+    height: 55px;
+    position: absolute;
+    background-color: #48556a;
+    border-radius: 10px;
+    top:-75px;
+    display: flex;
+    align-items: center;
+    padding-left: 37px;
+    padding-right: 36px;
+}
+
+.share-link-container > div:first-child{
+    display: flex;
+}
+
+.share-link-container::before{
+    width: 0px;
+    height: 0px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #48556a;
+    border-bottom: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+}
+
+.share-link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.share-text{
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 5px;
+    color: #9DAEC2;
+    margin-right: 21px;
+}
+
+.share-link-group{
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.share-link-group a{
+    display: flex;
+}
+
+.background-color-white{
+    background-color: var(--desaturated-dark-blue);
+}
+
+@media screen and (max-width:375px)  {
+    body{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    main{
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border-radius: 10px ;
+        box-shadow:rgba(201, 213, 225, 0.5) 0px 40px 40px -10px ;
+    }
+
+    .banner{
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 200px;
+        border-radius: 10px 10px 0px 0px;
+    }   
+
+    .container{
+        display: flex;
+        padding:36px 32px 20px 32px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .title{
+        margin-bottom: 12px;
+    }
+
+    .author{
+        margin-top: 32px;
+    }
+
+    .share-link-container{
+        position:static;
+        max-width:100%;
+        padding-left: 32px;
+        padding-right: 32px;
+        justify-content:space-between;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .share-link-container::before{
+        display: none;
+        content: "";
+    }
+
+    .share-container{
+        position: static;
+    }
+}
