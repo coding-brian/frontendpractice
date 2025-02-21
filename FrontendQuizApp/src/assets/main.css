@@ -1,0 +1,34 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .display {
+    @apply font-medium text-[144px]/[100%];
+  }
+
+  .heading-l-bold {
+    @apply font-medium text-[64px]/[100%];
+  }
+
+  .heading-l-regular {
+    @apply font-normal text-[64px]/[100%];
+  }
+
+  .heading-m {
+    @apply font-medium text-[36px]/[100%];
+  }
+
+  .heading-s {
+    @apply font-medium text-[28px]/[100%];
+  }
+
+  .body-m {
+    @apply font-normal text-[24px]/[150%];
+  }
+
+  .body-s {
+    @apply font-normal text-[20px]/[150%] italic;
+  }
+}

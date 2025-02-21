@@ -1,0 +1,912 @@
+{
+  "quizzes": [
+    {
+      "typeId": 0,
+      "title": "HTML",
+      "icon": "./assets/images/icon-html.svg",
+      "questions": [
+        {
+          "question": "What does HTML stand for?",
+          "options": [
+            {
+              "name": "Hyper Trainer Marking Language",
+              "selected": false
+            },
+            {
+              "name": "Hyper Text Marketing Language",
+              "selected": false
+            },
+            {
+              "name": "Hyper Text Markup Language",
+              "selected": false
+            },
+            {
+              "name": "Hyper Text Markup Leveler",
+              "selected": false
+            }
+          ],
+          "answer": "Hyper Text Markup Language"
+        },
+        {
+          "question": "Which of the following is the correct structure for an HTML document?",
+          "options": [
+            {
+              "name": "<html><head></head><body></body></html>",
+              "selected": false
+            },
+            {
+              "name": "<head><html></html><body></body></head>",
+              "selected": false
+            },
+            {
+              "name": "<body><head></head><html></html></body>",
+              "selected": false
+            },
+            {
+              "name": "<html><body></body><head></head></html>",
+              "selected": false
+            }
+          ],
+          "answer": "<html><head></head><body></body></html>"
+        },
+        {
+          "question": "Which HTML element is used to define the title of a document?",
+          "options": [
+            {
+              "name": "<head>",
+              "selected": false
+            },
+            {
+              "name": "<title>",
+              "selected": false
+            },
+            {
+              "name": "<header>",
+              "selected": false
+            },
+            {
+              "name": "<top>",
+              "selected": false
+            }
+          ],
+          "answer": "<title>"
+        },
+        {
+          "question": "What is the purpose of the <body> tag in HTML?",
+          "options": [
+            {
+              "name": "It defines the document's head section.",
+              "selected": false
+            },
+            {
+              "name": "It contains all the content such as text, images, and links.",
+              "selected": false
+            },
+            {
+              "name": "It is used to define the main content of an HTML document.",
+              "selected": false
+            },
+            {
+              "name": "It specifies the body of the email content in HTML.",
+              "selected": false
+            }
+          ],
+          "answer": "It contains all the content such as text, images, and links."
+        },
+        {
+          "question": "Which HTML tag is used to create a hyperlink?",
+          "options": [
+            {
+              "name": "<hyperlink>",
+              "selected": false
+            },
+            {
+              "name": "<link>",
+              "selected": false
+            },
+            {
+              "name": "<a>",
+              "selected": false
+            },
+            {
+              "name": "<href>",
+              "selected": false
+            }
+          ],
+          "answer": "<a>"
+        },
+        {
+          "question": "Which tag is used to display images in HTML?",
+          "options": [
+            {
+              "name": "<img>",
+              "selected": false
+            },
+            {
+              "name": "<image>",
+              "selected": false
+            },
+            {
+              "name": "<src>",
+              "selected": false
+            },
+            {
+              "name": "<pic>",
+              "selected": false
+            }
+          ],
+          "answer": "<img>"
+        },
+        {
+          "question": "What attribute is used to provide the path of an image in the <img> tag?",
+          "options": [
+            {
+              "name": "link",
+              "selected": false
+            },
+            {
+              "name": "src",
+              "selected": false
+            },
+            {
+              "name": "href",
+              "selected": false
+            },
+            {
+              "name": "url",
+              "selected": false
+            }
+          ],
+          "answer": "src"
+        },
+        {
+          "question": "Which HTML tag is used to create an unordered list?",
+          "options": [
+            {
+              "name": "<ul>",
+              "selected": false
+            },
+            {
+              "name": "<ol>",
+              "selected": false
+            },
+            {
+              "name": "<list>",
+              "selected": false
+            },
+            {
+              "name": "<li>",
+              "selected": false
+            }
+          ],
+          "answer": "<ul>"
+        },
+        {
+          "question": "What does the <br> tag do?",
+          "options": [
+            {
+              "name": "It breaks the text into two sections.",
+              "selected": false
+            },
+            {
+              "name": "It creates a bold text.",
+              "selected": false
+            },
+            {
+              "name": "It inserts a line break.",
+              "selected": false
+            },
+            {
+              "name": "It adds a new row in a table.",
+              "selected": false
+            }
+          ],
+          "answer": "It inserts a line break."
+        },
+        {
+          "question": "In HTML, what does the `fieldset` tag do?",
+          "options": [
+            {
+              "name": "It is used to group related data in a form.",
+              "selected": false
+            },
+            {
+              "name": "It sets the field to a fixed size.",
+              "selected": false
+            },
+            {
+              "name": "It automatically validates the fields within a form.",
+              "selected": false
+            },
+            {
+              "name": "It hides the fields in a form.",
+              "selected": false
+            }
+          ],
+          "answer": "It is used to group related data in a form."
+        }
+      ]
+    },
+    {
+      "typeId": 1,
+      "title": "CSS",
+      "icon": "./assets/images/icon-css.svg",
+      "questions": [
+        {
+          "question": "What does CSS stand for?",
+          "options": [
+            {
+              "name": "Colorful Style Sheets",
+              "selected": false
+            },
+            {
+              "name": "Computer Style Sheets",
+              "selected": false
+            },
+            {
+              "name": "Cascading Style Sheets",
+              "selected": false
+            },
+            {
+              "name": "Creative Style Sheets",
+              "selected": false
+            }
+          ],
+          "answer": "Cascading Style Sheets"
+        },
+        {
+          "question": "Which HTML attribute is used to define inline styles?",
+          "options": [
+            {
+              "name": "styles",
+              "selected": false
+            },
+            {
+              "name": "style",
+              "selected": false
+            },
+            {
+              "name": "class",
+              "selected": false
+            },
+            {
+              "name": "font-style",
+              "selected": false
+            }
+          ],
+          "answer": "style"
+        },
+        {
+          "question": "How do you insert a comment in a CSS file?",
+          "options": [
+            {
+              "name": "// this is a comment //",
+              "selected": false
+            },
+            {
+              "name": "/* this is a comment */",
+              "selected": false
+            },
+            {
+              "name": "-- this is a comment --",
+              "selected": false
+            },
+            {
+              "name": "<!-- this is a comment -->",
+              "selected": false
+            }
+          ],
+          "answer": "/* this is a comment */"
+        },
+        {
+          "question": "Which property is used to change the background color of an element?",
+          "options": [
+            {
+              "name": "color",
+              "selected": false
+            },
+            {
+              "name": "bgcolor",
+              "selected": false
+            },
+            {
+              "name": "background-color",
+              "selected": false
+            },
+            {
+              "name": "background",
+              "selected": false
+            }
+          ],
+          "answer": "background-color"
+        },
+        {
+          "question": "How do you apply a style to all <p> elements?",
+          "options": [
+            {
+              "name": "p { }",
+              "selected": false
+            },
+            {
+              "name": ".p { }",
+              "selected": false
+            },
+            {
+              "name": "#p { }",
+              "selected": false
+            },
+            {
+              "name": "all.p { }",
+              "selected": false
+            }
+          ],
+          "answer": "p { }"
+        },
+        {
+          "question": "Which property is used to change the font of an element?",
+          "options": [
+            {
+              "name": "font-style",
+              "selected": false
+            },
+            {
+              "name": "text-style",
+              "selected": false
+            },
+            {
+              "name": "font-family",
+              "selected": false
+            },
+            {
+              "name": "typeface",
+              "selected": false
+            }
+          ],
+          "answer": "font-family"
+        },
+        {
+          "question": "How do you make each word in a text start with a capital letter?",
+          "options": [
+            {
+              "name": "text-transform: capitalize",
+              "selected": false
+            },
+            {
+              "name": "text-transform: uppercase",
+              "selected": false
+            },
+            {
+              "name": "text-style: capital",
+              "selected": false
+            },
+            {
+              "name": "font-transform: capitalize",
+              "selected": false
+            }
+          ],
+          "answer": "text-transform: capitalize"
+        },
+        {
+          "question": "How do you select an element with the class name 'header'?",
+          "options": [
+            {
+              "name": ".header",
+              "selected": false
+            },
+            {
+              "name": "#header",
+              "selected": false
+            },
+            {
+              "name": "header",
+              "selected": false
+            },
+            {
+              "name": "*header",
+              "selected": false
+            }
+          ],
+          "answer": ".header"
+        },
+        {
+          "question": "What is the default value of the 'position' property?",
+          "options": [
+            {
+              "name": "relative",
+              "selected": false
+            },
+            {
+              "name": "fixed",
+              "selected": false
+            },
+            {
+              "name": "absolute",
+              "selected": false
+            },
+            {
+              "name": "static",
+              "selected": false
+            }
+          ],
+          "answer": "static"
+        },
+        {
+          "question": "What is the purpose of the z-index property in CSS?",
+          "options": [
+            {
+              "name": "To count the number of elements",
+              "selected": false
+            },
+            {
+              "name": "To set the magnification level of an element",
+              "selected": false
+            },
+            {
+              "name": "To specify the stack order of an element",
+              "selected": false
+            },
+            {
+              "name": "To create a zoom effect",
+              "selected": false
+            }
+          ],
+          "answer": "To specify the stack order of an element"
+        }
+      ]
+    },
+    {
+      "typeId": 2,
+      "title": "JavaScript",
+      "icon": "./assets/images/icon-js.svg",
+      "questions": [
+        {
+          "question": "Which syntax is correct to output 'Hello World' in an alert box?",
+          "options": [
+            {
+              "name": "alertBox('Hello World');",
+              "selected": false
+            },
+            {
+              "name": "msg('Hello World');",
+              "selected": false
+            },
+            {
+              "name": "alert('Hello World');",
+              "selected": false
+            },
+            {
+              "name": "msgBox('Hello World');",
+              "selected": false
+            }
+          ],
+          "answer": "alert('Hello World');"
+        },
+        {
+          "question": "How do you call a function named 'myFunction'?",
+          "options": [
+            {
+              "name": "call function myFunction()",
+              "selected": false
+            },
+            {
+              "name": "call myFunction()",
+              "selected": false
+            },
+            {
+              "name": "myFunction()",
+              "selected": false
+            },
+            {
+              "name": "execute myFunction()",
+              "selected": false
+            }
+          ],
+          "answer": "myFunction()"
+        },
+        {
+          "question": "How to write an IF statement in JavaScript?",
+          "options": [
+            {
+              "name": "if i = 5 then",
+              "selected": false
+            },
+            {
+              "name": "if (i == 5)",
+              "selected": false
+            },
+            {
+              "name": "if i == 5",
+              "selected": false
+            },
+            {
+              "name": "if i = 5",
+              "selected": false
+            }
+          ],
+          "answer": "if (i == 5)"
+        },
+        {
+          "question": "How to write an IF statement for executing some code if 'i' is NOT equal to 5?",
+          "options": [
+            {
+              "name": "if (i <> 5)",
+              "selected": false
+            },
+            {
+              "name": "if i =! 5 then",
+              "selected": false
+            },
+            {
+              "name": "if (i != 5)",
+              "selected": false
+            },
+            {
+              "name": "if i not = 5",
+              "selected": false
+            }
+          ],
+          "answer": "if (i != 5)"
+        },
+        {
+          "question": "How does a FOR loop start?",
+          "options": [
+            {
+              "name": "for (i = 0; i <= 5)",
+              "selected": false
+            },
+            {
+              "name": "for i = 1 to 5",
+              "selected": false
+            },
+            {
+              "name": "for (i <= 5; i++)",
+              "selected": false
+            },
+            {
+              "name": "for (i = 0; i <= 5; i++)",
+              "selected": false
+            }
+          ],
+          "answer": "for (i = 0; i <= 5; i++)"
+        },
+        {
+          "question": "How can you add a single-line comment in JavaScript?",
+          "options": [
+            {
+              "name": "'This is a single-line comment",
+              "selected": false
+            },
+            {
+              "name": "//This is a single-line comment",
+              "selected": false
+            },
+            {
+              "name": "<!--This is a single-line comment-->",
+              "selected": false
+            },
+            {
+              "name": "/* This is a single-line comment */",
+              "selected": false
+            }
+          ],
+          "answer": "//This is a single-line comment"
+        },
+        {
+          "question": "What is the correct way to write a JavaScript array?",
+          "options": [
+            {
+              "name": "var colors = (1:'red', 2:'green', 3:'blue')",
+              "selected": false
+            },
+            {
+              "name": "var colors = ['red', 'green', 'blue']",
+              "selected": false
+            },
+            {
+              "name": "var colors = 'red', 'green', 'blue'",
+              "selected": false
+            },
+            {
+              "name": "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')",
+              "selected": false
+            }
+          ],
+          "answer": "var colors = ['red', 'green', 'blue']"
+        },
+        {
+          "question": "How do you find the number with the highest value of x and y?",
+          "options": [
+            {
+              "name": "Math.ceil(x, y)",
+              "selected": false
+            },
+            {
+              "name": "top(x, y)",
+              "selected": false
+            },
+            {
+              "name": "Math.max(x, y)",
+              "selected": false
+            },
+            {
+              "name": "Math.highest(x, y)",
+              "selected": false
+            }
+          ],
+          "answer": "Math.max(x, y)"
+        },
+        {
+          "question": "Which operator is used to assign a value to a variable?",
+          "options": [
+            {
+              "name": "-",
+              "selected": false
+            },
+            {
+              "name": "*",
+              "selected": false
+            },
+            {
+              "name": "=",
+              "selected": false
+            },
+            {
+              "name": "x",
+              "selected": false
+            }
+          ],
+          "answer": "="
+        },
+        {
+          "question": "What is the correct way to write a JavaScript object?",
+          "options": [
+            {
+              "name": "var person = {firstName: 'John', lastName: 'Doe'};",
+              "selected": false
+            },
+            {
+              "name": "var person = {firstName = 'John', lastName = 'Doe'};",
+              "selected": false
+            },
+            {
+              "name": "var person = (firstName: 'John', lastName: 'Doe');",
+              "selected": false
+            },
+            {
+              "name": "var person = (firstName = 'John', lastName = 'Doe');",
+              "selected": false
+            }
+          ],
+          "answer": "var person = {firstName: 'John', lastName: 'Doe'};"
+        }
+      ]
+    },
+    {
+      "typeId": 3,
+      "title": "Accessibility",
+      "icon": "./assets/images/icon-accessibility.svg",
+      "questions": [
+        {
+          "question": "What does 'WCAG' stand for?",
+          "options": [
+            {
+              "name": "Web Content Accessibility Guidelines",
+              "selected": false
+            },
+            {
+              "name": "Web Compliance Accessibility Guide",
+              "selected": false
+            },
+            {
+              "name": "Web Content Accessibility Goals",
+              "selected": false
+            },
+            {
+              "name": "Website Compliance and Accessibility Guidelines",
+              "selected": false
+            }
+          ],
+          "answer": "Web Content Accessibility Guidelines"
+        },
+        {
+          "question": "Which element is used to provide alternative text for images for screen reader users?",
+          "options": [
+            {
+              "name": "<alt>",
+              "selected": false
+            },
+            {
+              "name": "<figcaption>",
+              "selected": false
+            },
+            {
+              "name": "<description>",
+              "selected": false
+            },
+            {
+              "name": "<img alt='description'>",
+              "selected": false
+            }
+          ],
+          "answer": "<img alt='description'>"
+        },
+        {
+          "question": "What does ARIA stand for in web development?",
+          "options": [
+            {
+              "name": "Accessible Rich Internet Applications",
+              "selected": false
+            },
+            {
+              "name": "Advanced Responsive Internet Assistance",
+              "selected": false
+            },
+            {
+              "name": "Accessible Responsive Internet Applications",
+              "selected": false
+            },
+            {
+              "name": "Automated Responsive Internet Actions",
+              "selected": false
+            }
+          ],
+          "answer": "Accessible Rich Internet Applications"
+        },
+        {
+          "question": "Which of the following is not a principle of the WCAG?",
+          "options": [
+            {
+              "name": "Perceivable",
+              "selected": false
+            },
+            {
+              "name": "Dependable",
+              "selected": false
+            },
+            {
+              "name": "Operable",
+              "selected": false
+            },
+            {
+              "name": "Understandable",
+              "selected": false
+            }
+          ],
+          "answer": "Dependable"
+        },
+        {
+          "question": "Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?",
+          "options": [
+            {
+              "name": "3:1",
+              "selected": false
+            },
+            {
+              "name": "4.5:1",
+              "selected": false
+            },
+            {
+              "name": "7:1",
+              "selected": false
+            },
+            {
+              "name": "2:1",
+              "selected": false
+            }
+          ],
+          "answer": "4.5:1"
+        },
+        {
+          "question": "Which of the following elements is inherently focusable, meaning it can receive focus without a 'tabindex' attribute?",
+          "options": [
+            {
+              "name": "<div>",
+              "selected": false
+            },
+            {
+              "name": "<span>",
+              "selected": false
+            },
+            {
+              "name": "<a href='...'>",
+              "selected": false
+            },
+            {
+              "name": "<p>",
+              "selected": false
+            }
+          ],
+          "answer": "<a href='...'>"
+        },
+        {
+          "question": "What is the purpose of the 'lang' attribute in an HTML page?",
+          "options": [
+            {
+              "name": "To specify the scripting language",
+              "selected": false
+            },
+            {
+              "name": "To define the character set",
+              "selected": false
+            },
+            {
+              "name": "To indicate the language of the page content",
+              "selected": false
+            },
+            {
+              "name": "To declare a language pack",
+              "selected": false
+            }
+          ],
+          "answer": "To indicate the language of the page content"
+        },
+        {
+          "question": "Which guideline ensures that content is accessible by keyboard as well as by mouse?",
+          "options": [
+            {
+              "name": "Keyboard Accessible",
+              "selected": false
+            },
+            {
+              "name": "Mouse Independence",
+              "selected": false
+            },
+            {
+              "name": "Device Independence",
+              "selected": false
+            },
+            {
+              "name": "Operable Controls",
+              "selected": false
+            }
+          ],
+          "answer": "Keyboard Accessible"
+        },
+        {
+          "question": "What is the role of 'skip navigation' links in web accessibility?",
+          "options": [
+            {
+              "name": "To skip over primary navigation to the main content",
+              "selected": false
+            },
+            {
+              "name": "To provide shortcuts to different sections of the website",
+              "selected": false
+            },
+            {
+              "name": "To help users skip unwanted sections like advertisements",
+              "selected": false
+            },
+            {
+              "name": "To bypass broken links in the navigation",
+              "selected": false
+            }
+          ],
+          "answer": "To skip over primary navigation to the main content"
+        },
+        {
+          "question": "Which of these tools can help in checking the accessibility of a website?",
+          "options": [
+            {
+              "name": "W3C Validator",
+              "selected": false
+            },
+            {
+              "name": "Google Lighthouse",
+              "selected": false
+            },
+            {
+              "name": "CSS Validator",
+              "selected": false
+            },
+            {
+              "name": "JavaScript Console",
+              "selected": false
+            }
+          ],
+          "answer": "Google Lighthouse"
+        }
+      ]
+    }
+  ]
+}
