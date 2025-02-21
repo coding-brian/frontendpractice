@@ -1,0 +1,218 @@
+@import './base.css';
+
+* {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+body {
+  background-color: var(--light-grayish-cyan);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+}
+
+span,
+input[type='text'] {
+  font-size: 24px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  border-radius: 25px;
+  background-color: white;
+  padding: 32px 32px 32px 48px;
+}
+
+img {
+  object-fit: contain; /* 保持内容比例且适应容器 */
+}
+
+.calculator {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.tip {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tip > span {
+  color: var(--wintergreen-dream);
+}
+
+.select-tip {
+  display: grid;
+  grid-template-columns: 7.3125rem 7.3125rem 7.3125rem;
+  grid-template-rows: 3rem 3rem;
+  column-gap: 0.875rem;
+  row-gap: 1rem;
+}
+
+.button {
+  background-color: var(--very-dark-cyan);
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.button:hover {
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan);
+}
+
+.button.selected {
+  color: var(--very-dark-cyan);
+  background-color: var(--light-cyan);
+}
+
+/* result */
+.result {
+  background-color: var(--very-dark-cyan);
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column > span {
+  font-size: 48px;
+  color: var(--strong-cyan);
+}
+
+.discription {
+  margin-right: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.discription .title {
+  color: white;
+  font-size: 16px;
+}
+
+.discription .unit {
+  color: var(--weldon-blue);
+  font-size: 13px;
+}
+
+.result button {
+  width: 100%;
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  border-radius: 5px;
+  border: 0px;
+  height: 48px;
+  font-size: 20px;
+}
+
+.result button:hover {
+  background-color: var(--light-cyan);
+}
+
+.result button.disable {
+  background-color: var(--skobeloff);
+  cursor: not-allowed;
+}
+
+/* input */
+.button-input {
+  background-color: var(--very-dark-cyan);
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+  font-size: 24px;
+}
+
+.button-input:hover {
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan);
+}
+
+.button-input.selected {
+  background-color: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
+  border-radius: 5px;
+  border: 0px;
+  text-align: right;
+  outline: 2px var(--strong-cyan) solid;
+  caret-color: var(--strong-cyan);
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-title {
+  font-size: 16px;
+  color: var(--wintergreen-dream);
+}
+
+.input-field > .input {
+  border-radius: 5px;
+  display: flex;
+  width: 23.6875rem;
+  height: 48px;
+  background-color: var(--very-light-cyan-green);
+  padding: 6px 17px 6px 17px;
+}
+
+.input-field > .input > input {
+  flex-grow: 1;
+  caret-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.input-field > .input.error {
+  flex-grow: 1;
+  caret-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  border: 2px var(--burnt-sienna) solid;
+}
+
+.input.focus {
+  border: 2px var(--strong-cyan) solid;
+}
+
+.input-field > .input > input {
+  border: none; /* 去除邊框 */
+  background: none; /* 移除背景 */
+  outline: none;
+  text-align: right;
+}
+
+.error-message {
+  font-size: 16px;
+  color: var(--terra-cotta);
+}
