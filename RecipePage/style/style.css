@@ -1,0 +1,259 @@
+ :root{
+    --rose-800:#7A284E;
+    --rose-50:#FFF7FB;
+    --stone-900:#312E2C;
+    --stone-600:#5F564D;
+    --stone-150:#E3DDD7;
+    --stone-100:#F3E5D7;
+    --brown-800:#854632;
+    --spacing-1600:128px;
+    --spacing-600:48px;
+    --spacing-500:40px;
+    --spacing-400:32px;
+    --spacing-300:24px;
+    --spacing-200:16px;
+    --spacing-150:12px;
+    --spacing-100:8px;
+ }
+ 
+ * {
+    box-sizing: border-box;
+  }
+
+ .rose-800{
+    color: var(--rose-800);
+ }
+
+ .rose-50{
+    color: var(--rose-50);
+ }
+
+ .stone-900{
+    color: var(--stone-900);
+ }
+
+ .stone-600{
+    color: var(--stone-600);
+ }
+
+ .stone-150{
+    color: var(--stone-150);
+ }
+
+ .stone-100{
+    color: var(--stone-100);
+ }
+
+ .brown-800{
+    color: var(--brown-800);
+ }
+
+ .white{
+    color: white;
+ }
+ 
+ .text-preset-1{
+    font-family:  "Young Serif", serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0px;
+ }
+
+ .text-preset-2{
+    font-family:  "Young Serif", serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0px;
+ }
+
+ .text-preset-3{
+    font-family:  "Outfit", serif;
+    font-weight: 600 ;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0px;
+ }
+ 
+ .text-preset-4{
+    font-family:  "Outfit", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+ }
+
+ .text-preset-4-bold{
+    font-family:  "Outfit", serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+ }
+
+ body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: var(--spacing-1600);
+    padding-bottom: var(--spacing-1600);
+    background-color: var(--stone-100);
+ }
+
+ main{
+    max-width: 736px;
+    display: grid;
+    row-gap: var(--spacing-500);
+    padding: var(--spacing-500);
+    border-radius: 24px;
+    background-color: white;
+ }
+
+ .banner{
+    border-radius: 12px;
+    width: 100%;
+    object-fit: contain;
+ }
+
+ .content{
+    display: grid;
+    row-gap: var(--spacing-400);
+ }
+
+ .description{
+    display: grid;
+    row-gap: var(--spacing-300);
+ }
+
+ .preparation-time{
+    background-color: var(--rose-50);
+    padding: var(--spacing-300);
+    display: grid;
+    row-gap: var(--spacing-200);
+    border-radius: 12px;
+ }
+ .ingredients{
+    display: grid;
+    row-gap: var(--spacing-300);
+ }
+ .list-border{
+    border-bottom: var(--stone-150) solid 1px;
+    padding-bottom: var(--spacing-400);
+ }
+
+ .list{
+    display: grid;
+    row-gap: var(--spacing-300);
+ }
+
+ .table{
+    display: grid; row-gap: 12px
+ }
+
+ .table-row{
+    padding-bottom: 12px;
+    padding-right: 32px;
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+ }
+
+ .table-row div:first-child{
+    margin-right: var(--spacing-200);
+ }
+ 
+ .table-row:not(:last-child){
+    border-bottom: 1px solid var(--stone-150);
+ }
+
+ .table-column{
+    width: 100%
+ }
+ 
+ ul{
+    margin: 0;
+    padding-left: var(--spacing-100);
+ }
+
+ ul li{
+    margin: 0;
+    padding: 0;
+    display: flex;
+ }
+
+ .dot-container{
+   width: var(--spacing-200);
+   display: flex;
+   align-items: center;
+ }
+ .dot{
+   width: 4px;
+   height: 4px;
+   border-radius: 100%;
+   background-color: var(--rose-800);
+ }
+
+ ul li p{
+    margin: 0;
+    margin-left: var(--spacing-200);
+ }
+
+ ul li::marker{
+    color: var(--rose-800);
+ }
+
+ ul li:not(:last-child){
+    margin-bottom: var(--spacing-100);
+ }
+
+ ol {
+    margin: 0;
+    padding-left: 1.5rem;
+    display: grid;
+    row-gap: var(--spacing-100);
+ }
+
+ ol li p{
+    margin: 0;
+    margin-left: 16px;
+ }
+
+ ol li::marker{
+    color: var(--rose-800);
+    font-family:  "Outfit", serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+ }
+
+ @media screen and (max-width:375px) {
+    body{
+        background-color: white;
+        padding: 0;
+        margin: 0;
+     }
+
+     main{
+        width: 375px;
+        display: grid;
+        row-gap: var(--spacing-500);
+        padding: 0;
+        background-color: white;
+        border-radius: 0px;
+     }
+
+     .banner{
+        height: 171px;
+        border-radius: 0px;
+     }
+
+     .content{
+        display: grid;
+        row-gap: var(--spacing-400);
+        padding-right: var(--spacing-400);
+        padding-left:var(--spacing-400) ;
+        padding-bottom: var(--spacing-500);
+     }
+ }
