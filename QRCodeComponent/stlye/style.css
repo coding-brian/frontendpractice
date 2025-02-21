@@ -1,0 +1,71 @@
+:root{
+    --slate-900:#1F314F;
+    --slate-500:#68778D;
+    --slate-300:#D5E1EF;
+    --space-500:40px;
+    --space-300:24px;
+    --space-200:16px;
+}
+
+body{
+    background-color: var(--slate-300);
+    font-family: 'Outfit', sans-serif; /* 使用 Outfit 字體 */
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+
+.container{
+    background-color: white;
+    padding: 16px 16px 40px 16px;
+    border-radius: 20px;
+    display: grid;
+    row-gap: 24px;
+    max-width: 288px;
+    margin: auto;
+}
+
+.content{
+    display: grid;
+    row-gap: 16px;
+    padding-right: var(--space-200);
+    padding-left: var(--space-200);
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.text-typography-preset1{
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    font-weight: bold;
+}
+
+.text-typography-preset2{
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+}
+
+.slate-900{
+    color: var(--slate-900);
+}
+.slate-500{
+    color: var(--slate-500);
+}
+.slate-300{
+    color: var(--slate-300);
+}
+
+.text-center{
+    text-align: center;
+}
