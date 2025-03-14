@@ -22,10 +22,7 @@ const numberOfPeople = reactive({
   value: null,
   isError: false,
 })
-const selectTip = reactive({
-  value: 0,
-  type: null,
-})
+const tipPercent = ref(0)
 
 const customInput = ref(null)
 const amount = ref(0)
@@ -54,25 +51,15 @@ const amountPerson = computed(() => {
 })
 
 const calculateTips = () => {
-  if (selectTip.value && numberOfPeople.value && numberOfPeople.value > 0) {
-    switch (selectTip.type) {
-      case buttonType.value.normal:
-        tips.value = bill.value * (selectTip.value / 100)
-        break
-      case buttonType.value.custom:
-        tips.value = selectTip.value
-        break
-      default:
-        break
-    }
+  if (tipPercent.value && numberOfPeople.value && numberOfPeople.value > 0) {
+    if (bill.value) tips.value = bill.value * (tipPercent.value / 100)
   } else {
     tips.value = 0
   }
 }
 
-const calculateAmount = () => {
-  amount.value = selectTip.value > 0 ? bill.value * (1 + selectTip.value / 100) : bill.value
-}
+const calculateAmount = () =>
+  (amount.value = tipPercent.value > 0 ? bill.value * (1 + tipPercent.value / 100) : bill.value)
 
 const calculateResult = () => {
   calculateTips()
@@ -90,8 +77,7 @@ const handleSelectTip = async (button) => {
   if (button.selected) {
     copyButtonToSelecTip(button)
   } else {
-    selectTip.value = 0
-    selectTip.type = null
+    tipPercent.value = 0
   }
 
   if (button.type === buttonType.value.normal) {
@@ -109,7 +95,7 @@ const handleSelectTip = async (button) => {
 }
 
 const inputCustomTipHandler = (event) => {
-  selectTip.value = validateNumber(event.target.value)
+  tipPercent.value = validateNumber(event.target.value)
   calculateResult()
 }
 
@@ -122,8 +108,7 @@ const inputBillHandle = (event) => {
 }
 
 const copyButtonToSelecTip = (button) => {
-  selectTip.value = button.value
-  selectTip.type = button.type
+  tipPercent.value = button.value
 }
 
 const numberOfPeopleHandler = (event) => {
@@ -139,7 +124,7 @@ const numberOfPeopleHandler = (event) => {
 }
 
 const blurInputCustomTipHandle = () => {
-  if (selectTip.value === null || selectTip.value === undefined) {
+  if (tipPercent.value === null || tipPercent.value === undefined) {
     buttons.value.forEach((item) => {
       item.selected = false
     })
@@ -153,8 +138,7 @@ const reset = () => {
   numberOfPeople.value = null
   numberOfPeople.isError = false
 
-  selectTip.value = 0
-  selectTip.type = null
+  tipPercent.value = 0
 
   buttons.value.forEach((item) => {
     item.selected = false
